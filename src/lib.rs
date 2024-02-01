@@ -1,14 +1,6 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+use extism_pdk::*;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
+#[plugin_fn]
+pub fn greet(name: String) -> FnResult<String> {
+    Ok(format!("Hello, {}!", name))
 }
