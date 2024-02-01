@@ -8,6 +8,8 @@ edition = "2021"
 [dependencies]
 extism-pdk = "1.0.1"
 regex = "1.10.3"
+serde = "1.0.196"
+serde_json = "1.0.113"
 
 [lib]
 crate_type = ["cdylib"]

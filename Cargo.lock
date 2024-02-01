@@ -147,6 +147,8 @@ version = "0.1.0"
 dependencies = [
  "extism-pdk",
  "regex",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]
